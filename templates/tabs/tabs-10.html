@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<p class="tabs" data="1" style="padding: 15px 25px;border: 1px solid black; border-radius: 3px; display: inline-block">1</p>
+<p class="tabs" data="2" style="padding: 15px 25px;border: 1px solid black; border-radius: 3px; display: inline-block">2</p>
+<p class="tabs" data="3" style="padding: 15px 25px;border: 1px solid black; border-radius: 3px; display: inline-block">3</p>
+<div data="1" class="tabs-content" style="margin-bottom: 2em">Lorem ipsum dolor sit amet, consectetur adipisicing elit. A doloremque est, et quos voluptates voluptatum!Lorem ipsum dolor sit amet, consectetur adipisicing elit. A doloremque est, et quos voluptates voluptatum!Lorem ipsum dolor sit amet, consectetur adipisicing elit. A doloremque est, et quos voluptates voluptatum!</div>
+<div data="2" class="tabs-content" style="margin-bottom: 2em">tabs22222 tabs22222 tabs22222 tabs22222 tabs22222 tabs22222 tabs22222 tabs22222 tabs22222 tabs22222 tabs22222 tabs22222 tabs22222 tabs22222 tabs22222 tabs22222 tabs22222 tabs22222 tabs22222 tabs22222 tabs22222 tabs22222 tabs22222 tabs22222 tabs22222 tabs22222 tabs22222 tabs22222 tabs22222 </div>
+<div data="3" class="tabs-content" style="margin-bottom: 2em">tabs3 tabs3 tabs3 tabs3 tabs3 tabs3 tabs3 tabs3 tabs3 tabs3 tabs3 tabs3 tabs3 tabs3 tabs3 tabs3 tabs3 tabs3 tabs3 tabs3 tabs3 tabs3 tabs3 tabs3 tabs3 tabs3 tabs3 tabs3 tabs3 tabs3 tabs3 tabs3 tabs3 tabs3 tabs3 tabs3 tabs3 tabs3 tabs3 tabs3 tabs3 tabs3 tabs3 tabs3 tabs3 tabs3 tabs3 tabs3 tabs3 tabs3 tabs3 tabs3 tabs3 tabs3 tabs3 tabs3 tabs3 tabs3 tabs3 tabs3 tabs3 tabs3 tabs3 tabs3 tabs3 tabs3 tabs3 tabs3 tabs3 tabs3 tabs3 tabs3 tabs3 tabs3 tabs3 tabs3 tabs3 tabs3 tabs3 tabs3 tabs3 tabs3 tabs3 tabs3 </div>
+<script>
+let tabs = document.querySelectorAll('.tabs');
+let tabsContent = document.querySelectorAll('.tabs-content');
+tabsContent.forEach(function (e,x) {
+if (x > 0){
+    e.style.display = 'none';
+}
+})
+
+</script>
+</body>
+</html>
