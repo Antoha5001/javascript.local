@@ -1,7 +1,12 @@
+let obj = {
+    'country': 'Russia',
+    'city': 'Tomsk',
+    'street': 'Lenina',
+    getAddres: () => {
+        return function () {
+            return `${this.country}, ${this.city}`;
+        }
+    }
+};
 
-
-
-let title = 'Заголовок'
-let v = `<h1>${title}</h1>`
-
-console.log(v)
+console.log(obj.getAddres());

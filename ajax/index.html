@@ -5,6 +5,39 @@
     <title>Title</title>
 </head>
 <body>
+<input type="text" value="" id="query">
+<button id="get_value">Отправить</button>
+<div class="blockchain"></div>
+<a href=""></a>
 
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.19.0/axios.js"></script>
+<script  src="get_json.js"></script>
+<script>
+
+    var button = document.getElementById('get_value');
+    var myInput = document.getElementById('query');
+
+
+    var block = document.querySelector('.blockchain');
+
+    button.addEventListener('click', () => {
+        var value = myInput.value;
+        promise = getJson(value);
+        promise.then(uppendToBlockcain);
+    });
+
+    function uppendToBlockcain(data) {
+       el = document.createElement('a');
+       br = document.createElement('br');
+       console.log(data);
+       el.textContent = data.url;
+       el.href = data.url;
+       block.appendChild(el);
+       block.appendChild(br);
+    }
+
+</script>
 </body>
+
 </html>

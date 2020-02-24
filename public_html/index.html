@@ -5,7 +5,12 @@
 	<title>Document</title>
 </head>
 <body>
-	123
-	<script type="module" src="script/script.js"></script>
+Hello <input id="message">
+<script>
+	setInterval(function () {
+		message = document.getElementById('message');
+		console.log(message.value)
+	}, 3000 )
+</script>
 </body>
 </html>
